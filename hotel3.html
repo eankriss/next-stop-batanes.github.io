@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Welcome to Batanes</title>
+
+        <style>
+            * 
+		    {
+			    margin: 0;
+			    padding: 0;
+			    box-sizing: border-box;
+		    }
+
+		    body 
+		    {
+			    text-align: left;
+		    }
+
+		    header 
+		    {
+			    height: 80px;
+			    width: 100%;
+			    background: #262626;
+			    z-index: 12;
+			    position: sticky;
+			    overflow: hidden;
+		    }
+
+		    .navigation 
+		    {
+			    width: 1170px;
+			    margin: 0 auto;
+		    }
+
+		    .logo 
+		    {
+			    width: 30%;
+			    float: left;
+			    line-height: 100px;
+		    }
+
+		    .logo a 
+		    {
+			    text-decoration: none;
+			    font-size: 30px;
+			    font-family: 'Poppins';
+			    color: #FFFFFF;
+			    letter-spacing: 5px;
+			    font-style: normal;
+			    font-weight: 600;
+			    line-height: 30px;
+		    }
+
+		    .navlink 
+		    {
+			    text-transform: uppercase;
+		    }
+
+		    nav 
+		    {
+			    float: right;
+			    line-height: 95px;
+		    }
+
+		    nav a 
+		    {
+			    text-decoration: none;
+			    font-family: 'Poppins';
+			    letter-spacing: 2px;
+			    font-size: 18px;
+			    margin: 0 10px;
+			    color: #FFFFFF;
+		    }
+
+            .title 
+			{
+				text-transform: uppercase;
+				text-align: center;
+				font-weight: 700;
+				letter-spacing: 4px;
+				font-size: 20px;
+				font-family: "Poppins";
+			}
+
+            .title h2 
+		    {
+			    text-align: center;
+			    font-size: 25px;
+			    letter-spacing: 2px;
+			}
+
+            .hotel_container 
+		    {
+			    margin-left: 55px;
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                margin-bottom: 15px;
+		    }
+
+            .dscrptn 
+		    {
+			    text-align: center;
+			    letter-spacing: 2px;
+			    font-size: 15px;
+			    width: 80%;
+			    margin-left: 10%;
+			    font-family: "Poppins";
+			    font-weight: 500;
+		    }
+
+			footer 
+		{
+    		position: fixed;
+    		bottom: 0;
+			position: static;
+		}
+
+		.footer-distributed 
+		{
+    		background-color: #262626;
+    		box-sizing: border-box;
+    		width: 100%;
+    		text-align: left;
+    		font-family: "Poppins";
+    		padding: 50px 50px 60px 50px;
+    		margin-top: 80px;
+		}
+
+		.footer-distributed 
+		.footer-left, 
+		.footer-distributed 
+		.footer-center, 
+		.footer-distributed 
+		.footer-right 
+		{
+    		display: inline-block;
+    		vertical-align: top;
+		}
+
+		.footer-distributed 
+		.footer-left 
+		{
+    		width: 30%;
+		}
+
+		.footer-distributed h3 
+		{
+    		color: #ffffff;
+    		font-family: "Poppins";
+    		margin: 0;
+		}
+
+
+		.footer-distributed 
+		.footer-links 
+		{
+    		color: #ffffff;
+    		margin: 20px 0 12px;
+		}
+
+	.footer-distributed 
+	.footer-links a 
+	{
+    	display: inline-block;
+    	line-height: 1.8;
+    	text-decoration: none;
+    	color: inherit;
+	}
+
+	.footer-distributed 
+	.footer-batanes 
+	{
+    	color: #8f9296;
+    	font-size: 14px;
+    	font-weight: normal;
+    	margin: 0;
+	}
+
+	.footer-distributed 
+	.footer-center 
+	{
+    	width: 35%;
+	}
+
+	.footer-distributed 
+	.footer-center i 
+	{
+    	background-color: #33383b;
+    	color: #ffffff;
+    	font-size: 25px;
+    	width: 38px;
+    	height: 38px;
+    	border-radius: 50%;
+    	text-align: center;
+    	line-height: 42px;
+    	margin: 10px 15px;
+    	vertical-align: middle;
+	}
+
+	.footer-distributed 
+	.footer-center 
+	i.fa-envelope 
+	{
+    	font-size: 17px;
+    	line-height: 38px;
+	}
+
+	.footer-distributed .footer-center p {
+    	display: inline-block;
+    	color: #ffffff;
+    	vertical-align: middle;
+    	margin: 0;
+	}
+
+	.footer-distributed .footer-center p span 
+	{
+    	display: block;
+    	font-weight: normal;
+    	font-size: 14px;
+    	line-height: 2;
+	}
+
+	.footer-distributed 
+	.footer-center p a 
+	{
+    	color: #ffffff;
+    	text-decoration: none;
+	}
+
+
+	.footer-distributed 
+	.footer-right 
+	{
+    	width: 30%;
+
+	}
+
+	.footer-distributed 
+	.footer-batanes-about 
+	{
+    	line-height: 20px;
+    	color: #92999f;
+    	font-size: 13px;
+    	font-weight: normal;
+    	margin: 0;
+	}
+
+	.footer-distributed 
+	.footer-batanes-about span 
+	{
+    	display: block;
+    	color: #ffffff;
+    	font-size: 18px;
+    	font-weight: bold;
+    	margin-bottom: 20px;
+	}
+
+	.footer-distributed 
+	.footer-icons 
+	{
+    	margin-top: 25px;
+	}
+
+	.footer-distributed 
+	.footer-icons a 
+	{
+    	display: inline-block;
+    	width: 35px;
+    	height: 35px;
+    	cursor: pointer;
+    	background-color: #33383b;
+    	border-radius: 2px;
+    	font-size: 20px;
+    	color: #ffffff;
+    	text-align: center;
+    	line-height: 35px;
+    	margin-right: 3px;
+    	margin-bottom: 5px;
+	}
+
+	.footer-distributed 
+	.footer-icons a:hover 
+	{
+    	background-color: #3F71EA;
+	}
+
+	.footer-links a:hover 
+	{
+    	color: #3F71EA;
+	}
+	
+	.footer-left h3
+	{
+    	cursor: pointer;
+	}
+
+	.footer-left h3:hover
+	{
+    	color: #3F71EA;
+	}
+
+        </style>
+    </head>
+
+    <body>
+        <div class="head">
+            <header>
+                <div class="navigation">
+                    <div class="logo">
+                        <a href="index.html">BATANES</a>
+                    </div>
+    
+                    <nav>
+                        <a href="index.html" class="navlink active-link">home</a>
+                        <a href="index.html#tour" class="navlink">tours</a>
+                        <a href="index.html#products" class="navlink">products</a>
+                        <a href="index.html#accommodation" class="navlink">accommodation</a>
+                        <a href="index.html#contactus" class="navlink">contact us</a>
+                    </nav>
+    
+                </div> 
+            </header> 
+		</div>
+
+        <div class="title">
+			<br><br>
+			<h1> Troy Lodge </h1>
+			<br>
+		</div>
+
+        <hr style="width: 100%; margin: auto; border: 1px solid black;"><br><br>
+
+        <div class="wrapper">
+
+            <figure>
+
+                <div class="hotel_container">
+
+                    <img src="./ACCOMMODATION/Troy Lodge/3817282_v1.jpeg" class="hotelpic1" style="width: 620px; height: 400px;"/>
+                    <img src="./ACCOMMODATION/Troy Lodge/551963_14061612110019863857.jpg" class="hotelpic2" style="width: 620px; height: 400px;"/>
+        
+                </div>
+
+            </figure>
+
+        </div>
+
+        <div class="title">
+            <br>
+            <h2>PRICE: ₱731 per night</h2>
+            <br>
+            <h2>RATE OF THE HOTEL: 1 STAR</h2>
+
+        </div>
+
+        <div class="dscrptn">
+            <br>
+            <p>
+                If what you're looking for is a conveniently located hotel in Basco, Set 0.1 km from the excitement of 
+                the city, this 1-star hotel commands an excellent location and provides access to the city's biggest 
+                attractions. With its convenient location, the hotel offers easy access to the city's must-see 
+                destinations. At Troy Lodge, the excellent service and superior facilities make for an unforgettable stay. 
+                Top features of the hotel include daily housekeeping, car park, tours, smoking area, car park onsite. 
+                The ambiance of Troy Lodge is reflected in every guestroom. linens, mirror, towels, non-smoking rooms, 
+                air conditioning are just some of the facilities that can be found throughout the property. The hotel's 
+                garden are ideal places to relax and unwind after a busy day. With an ideal location and facilities to match, 
+                Troy Lodge hits the spot in many ways.
+            </p><br><br>
+        </div>
+
+		<!-- FOOTER -->
+	<footer class="footer-distributed">
+
+        <div class="footer-left">
+            <a href="index.html" style="text-decoration: none;"><h3>BATANES</h3></a>
+
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                <br>
+                <a href="index.html#tour">Tours</a>
+                <br>
+                <a href="index.html#products">Products</a>
+                <br>
+                <a href="index.html#accommodation">Accommodation</a>
+				<br>
+                <a href="index.html#contactus">Contact Us</a>
+            </p>
+			<br>
+			<h3>Get Help</h3>
+			<br>
+			<h3>FAQ</h3>
+			<br>
+			<h3>Terms and Conditions</h3>
+            
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="address"></i>
+                <p>Batanes, Philippines</p>
+            </div>
+
+            <div>
+                <i class="phone"></i>
+                <p>+63 997 275 6753</p>
+            </div>
+            <div>
+                <i class="gmail"></i>
+                <p><a href="mailto:welcometobatanes@gmail.com">welcometobatanes@gmail.com</a></p><br>
+            
+				<p class="footer-batanes" style="padding-left: 29px; padding-top: 20px;">Copyright © BATANES 2023</p>
+				<br><br>
+				<p class="footer-batanes" style="padding-left: 29px; padding-top: 5px;">All rights reserved.</p>
+				</div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-batanes-about">
+                <span>About Us</span>
+                <strong>Batanes Island in the Philippines has a little bit of everything for different types of travelers: 
+					the mountains, the sea, the rolling hills, and the food. But above all, Batanes offers a unique type 
+					of refuge — peace and quiet, and the taste of a back-to-basics lifestyle.</strong>
+				<br><br><br>
+				<span>Follow Us</span>
+            </p>
+
+			
+            <div class="footer-icons">
+                <a href="#facebook"><img src="./icons/logo-facebook.svg"></a>
+                <a href="#instagram"><img src="./icons/logo-instagram.svg"></a>
+                <a href="#twitter"><img src="./icons/logo-twitter.svg"></a>
+                <a href="#youtube"><img src="./icons/logo-youtube.svg"></a>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+
+</html>
