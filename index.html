@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Welcome to Batanes</title>
+
+	<style>
+		* 
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body 
+		{
+			text-align: left;
+		}
+
+		header 
+		{
+			height: 80px;
+			width: 100%;
+			background: #262626;
+			z-index: 12;
+			position: fixed;
+			overflow: hidden;
+		}
+
+		.navigation 
+		{
+			width: 1170px;
+			margin: 0 auto;
+		}
+
+		.logo 
+		{
+			width: 30%;
+			float: left;
+			line-height: 100px;
+		}
+
+		.logo a 
+		{
+			text-decoration: none;
+			font-size: 30px;
+			font-family: 'Poppins';
+			color: #FFFFFF;
+			letter-spacing: 5px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 30px;
+		}
+
+		.navlink 
+		{
+			text-transform: uppercase;
+		}
+
+		nav 
+		{
+			float: right;
+			line-height: 95px;
+		}
+
+		nav a 
+		{
+			text-decoration: none;
+			font-family: 'Poppins';
+			letter-spacing: 2px;
+			font-size: 18px;
+			margin: 0 10px;
+			color: #FFFFFF;
+		}
+
+		.logo a:hover
+		{
+			color: #3F71EA;	
+		}
+
+		nav a:hover
+		{
+			color: #3F71EA;	
+		}
+
+		.picbatanes 
+		{
+			z-index: 12;
+			background-repeat: no-repeat;
+			background-size: cover;
+			filter: brightness(80%);
+		}
+
+		.batanes 
+		{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-transform: uppercase;
+			text-align: center;
+			color: #FFFFFF;
+			margin: 0 10px;
+			font-family: 'Poppins';
+			font-style: normal;
+			letter-spacing: 2px;
+			font-weight: 600;
+			font-size: 59px;
+		}
+
+		.title 
+		{
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: 700;
+			letter-spacing: 4px;
+			font-size: 20px;
+			font-family: "Poppins";
+		}
+
+		.title h2 
+		{
+			text-align: center;
+			font-size: 25px;
+			letter-spacing: 2px;
+			text-transform: capitalize;
+		}
+
+
+		.imgs 
+		{
+			display: flex;
+			align-items: center;
+			margin-left: 50px;
+			filter: brightness(85%);
+		}
+
+		.imgs2 
+		{
+			display: flex;
+			align-items: center;
+			margin-left: 350px;
+			filter: brightness(85%);
+		}
+
+		.imgs1 
+		{
+			display: flex;
+			align-items: center;
+			margin-left: 545px;
+			filter: brightness(85%);
+		}
+
+		.imgs::after 
+		{
+			content: "";
+			clear: both;
+			display: table;
+			align-items: center;
+		}
+
+		.overview_pic1:hover 
+		{
+			-ms-transform: scale(1.5);
+			-webkit-transform: scale(1.5);
+			transform: scale(1.5);
+		}
+
+		.overview_pic2:hover 
+		{
+			-ms-transform: scale(1.5);
+			-webkit-transform: scale(1.5);
+			transform: scale(1.5);
+		}
+
+		.overview_pic3:hover 
+		{
+			-ms-transform: scale(1.5);
+			-webkit-transform: scale(1.5);
+			transform: scale(1.5);
+		}
+
+		.climate_pic1:hover 
+		{
+			-ms-transform: scale(1.5);
+			-webkit-transform: scale(1.5);
+			transform: scale(1.5);
+		}
+
+		.climate_pic2:hover 
+		{
+			-ms-transform: scale(1.5);
+			-webkit-transform: scale(1.5);
+			transform: scale(1.5);
+		}
+
+		.climate_pic3:hover 
+		{
+			-ms-transform: scale(1.5);
+			-webkit-transform: scale(1.5);
+			transform: scale(1.5);
+		}
+
+		.culture_pic1:hover 
+		{
+			-ms-transform: scale(1.5);
+			-webkit-transform: scale(1.5);
+			transform: scale(1.5);
+		}
+
+		.culture_pic2:hover 
+		{
+			-ms-transform: scale(1.5);
+			-webkit-transform: scale(1.5);
+			transform: scale(1.5);
+		}
+
+		.culture_pic3:hover 
+		{
+			-ms-transform: scale(1.5);
+			-webkit-transform: scale(1.5);
+			transform: scale(1.5);
+		}
+
+		.people_pic1:hover 
+		{
+			-ms-transform: scale(1.5);
+			-webkit-transform: scale(1.5);
+			transform: scale(1.5);
+		}
+
+		.people_pic2:hover 
+		{
+			-ms-transform: scale(1.5);
+			-webkit-transform: scale(1.5);
+			transform: scale(1.5);
+		}
+
+		.people_pic3:hover 
+		{
+			-ms-transform: scale(1.5);
+			-webkit-transform: scale(1.5);
+			transform: scale(1.5);
+		}
+
+		.column 
+		{
+			float: left;
+			width: 25%;
+			padding: 5px;
+			margin-left: 5%;
+		}
+
+		.dscrptn 
+		{
+			text-align: center;
+			letter-spacing: 2px;
+			font-size: 15px;
+			width: 80%;
+			margin-left: 10%;
+			font-family: "Poppins";
+			font-weight: 500;
+		}
+
+		.dscrptn2 
+		{
+			text-align: center;
+			letter-spacing: 3px;
+			font-size: 20px;
+			width: 80%;
+			margin-left: 10%;
+			font-family: "Poppins";
+			font-weight: 600;
+		}
+
+		.tourist 
+		{
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: 700;
+			letter-spacing: 4px;
+			font-size: 20px;
+		}
+
+		.bttn_tour 
+		{
+			display: flex;
+			justify-content: center;
+			padding: 40px;
+			filter: brightness(75%);
+			cursor: pointer;
+		}
+
+		.tour_container 
+		{
+			margin-left: 55px;
+			filter: brightness(70%);
+		}
+
+		.tour_a:hover 
+		{
+			filter: brightness(65%);
+			cursor: pointer;
+		}
+
+		.tour_b:hover 
+		{
+			filter: brightness(65%);
+			cursor: pointer;
+		}
+
+		.atour_label 
+		{
+			position: absolute;
+			left: 26%;
+			top: 2540px;
+			transform: translate(-50%, -50%);
+			text-transform: uppercase;
+			text-align: center;
+			color: #FFFFFF;
+			margin: 0 10px;
+			font-family: 'Poppins';
+			font-style: normal;
+			letter-spacing: 2px;
+			font-weight: 600;
+			font-size: 59px;
+		}
+
+		.btour_label 
+		{
+			position: absolute;
+			left: 74%;
+			top: 2540px;
+			transform: translate(-50%, -50%);
+			text-transform: uppercase;
+			text-align: center;
+			color: #FFFFFF;
+			margin: 0 10px;
+			font-family: 'Poppins';
+			font-style: normal;
+			letter-spacing: 2px;
+			font-weight: 600;
+			font-size: 59px;
+		}
+
+		.hotel_container 
+		{
+			margin-left: 160px;
+			filter: brightness(65%);
+		}
+
+		.hotel2
+		{
+			margin-top: 30px;
+		}
+
+		.hotel3
+		{
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+
+		.hotel1:hover 
+		{
+			filter: brightness(50%);
+			cursor: pointer;
+		}
+
+		.hotel2:hover 
+		{
+			filter: brightness(50%);
+			cursor: pointer;
+		}
+
+		.hotel3:hover 
+		{
+			filter: brightness(50%);
+			cursor: pointer;
+		}
+
+		.hotelname1
+		{
+			position: absolute;
+			left: 48%;
+			top: 5420px;
+			transform: translate(-50%, -50%);
+			text-transform: uppercase;
+			text-align: center;
+			color: #FFFFFF;
+			margin: 0 10px;
+			font-family: 'Poppins';
+			font-style: normal;
+			letter-spacing: 1px;
+			font-weight: 600;
+			font-size: 60px;
+		}
+
+		.hotelname2
+		{
+			position: absolute;
+			left: 48%;
+			top: 6150px;
+			transform: translate(-50%, -50%);
+			text-transform: uppercase;
+			text-align: center;
+			color: #FFFFFF;
+			margin: 0 10px;
+			font-family: 'Poppins';
+			font-style: normal;
+			letter-spacing: 1px;
+			font-weight: 600;
+			font-size: 60px;
+		}
+
+		.hotelname3
+		{
+			position: absolute;
+			left: 48%;
+			top: 6878px;
+			transform: translate(-50%, -50%);
+			text-transform: uppercase;
+			text-align: center;
+			color: #FFFFFF;
+			margin: 0 10px;
+			font-family: 'Poppins';
+			font-style: normal;
+			letter-spacing: 1px;
+			font-weight: 600;
+			font-size: 60px;
+		}
+
+		#contact 
+		{
+  			width: 100%;
+  			height: 100%;
+		}
+
+		.section-header 
+		{
+			text-align: center;
+  			margin: 0 auto;
+  			padding: 40px 0;
+ 		 	font: 300 60px 'Oswald', sans-serif;
+  			color: black;
+  			text-transform: uppercase;
+  			letter-spacing: 4px;
+			text-align: center;
+			font-weight: 700;
+			font-family: "Poppins";
+		}
+
+		.contact-wrapper 
+		{
+  			display: flex;
+  			flex-direction: row;
+  			justify-content: space-between;
+  			margin: 0 auto;
+  			padding: 20px;
+  			position: relative;
+  			max-width: 840px;
+		}
+
+		.form-horizontal 
+		{
+  			max-width: 400px;
+  			font-family: 'Lato';
+  			font-weight: 400;
+		}
+
+		.form-control, 
+		textarea {
+  			max-width: 400px;
+  			background-color: white;
+  			color: black;
+  			letter-spacing: 1px;
+			font-family: "Poppins";
+		}	
+
+		.send-button 
+		{
+  			margin-top: 15px;
+  			height: 34px;
+  			width: 400px;
+  			overflow: hidden;
+  			transition: all .2s ease-in-out;
+		}
+
+		.alt-send-button 
+		{
+  			width: 400px;
+  			height: 34px;
+  			transition: all .2s ease-in-out;
+		}
+
+		.send-text 
+		{
+  			display: block;
+  			margin-top: 10px;
+  			font: 700 12px 'Lato', sans-serif;
+  			letter-spacing: 2px;
+		}
+
+		.alt-send-button:hover 
+		{
+			cursor: pointer;
+		}
+
+
+		.direct-contact-container 
+		{
+  			max-width: 400px;
+		}
+
+
+		.contact-list 
+		{
+  			list-style-type: none;
+  			margin-left: -30px;
+  			padding-right: 20px;
+		}
+
+		.list-item 
+		{
+  			line-height: 4;
+  			color: black;
+			cursor: pointer;
+		}
+
+
+		.contact-text 
+		{
+  			font: 300 18px 'Lato', sans-serif;
+  			letter-spacing: 1.9px;
+  			color: black;
+		}
+
+		.place 
+		{
+  			margin-left: 62px;
+		}
+
+		.phone 
+		{
+ 		 	margin-left: 56px;
+		}
+
+		.gmail 
+		{
+  			margin-left: 53px;
+		}
+
+		.contact-text a 
+		{
+  			color: black;
+  			text-decoration: none;
+  			transition-duration: 0.2s;
+		}
+
+		.contact-text a:hover 
+		{
+  			color: #3F71EA;
+  			text-decoration: none;
+		}
+
+
+		.social-media-list 
+		{
+  			position: relative;
+  			font-size: 22px;
+  			text-align: center;
+  			width: 100%;
+  			margin: 0 auto;
+  			padding: 0;
+		}
+
+		.social-media-list li a 
+		{
+  			color: black;
+			}
+
+		.social-media-list li 
+		{
+  			position: relative; 
+  			display: inline-block;
+  			height: 60px;
+  			width: 60px;
+  			margin: 10px 3px;
+  			line-height: 60px;
+  			border-radius: 50%;
+  			color: black;
+  			background-color: rgb(27,27,27);
+  			cursor: pointer; 
+  			transition: all .2s ease-in-out;
+		}
+
+		.social-media-list li:after 
+		{
+ 			content: '';
+  			position: absolute;
+  			top: 0;
+  			left: 0;
+  			width: 60px;
+  			height: 60px;
+  			line-height: 60px;
+  			border-radius: 50%;
+  			opacity: 0;
+  			box-shadow: 0 0 0 1px #3F71EA;
+  			transition: all .2s ease-in-out;
+		}
+
+		.social-media-list li:hover 
+		{
+  			background-color: #3F71EA 
+			}
+
+		.social-media-list li:hover:after 
+		{
+  			opacity: 1;  
+  			transform: scale(1.12);
+  			transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+		}
+
+		.social-media-list li:hover a 
+		{
+  			color: #000;
+		}
+
+		.form-control
+		{
+			display:block;
+			width:100%;
+			height:34px;
+			padding:6px 12px;
+			font-size:14px;
+			line-height:1.42857143;
+			color:#555;
+			background-color:#fff;
+			background-image:none;
+			border:1px solid;
+		}
+
+
+		footer 
+		{
+    		position: fixed;
+    		bottom: 0;
+			position: static;
+		}
+
+		.footer-distributed 
+		{
+    		background-color: #262626;
+    		box-sizing: border-box;
+    		width: 100%;
+    		text-align: left;
+    		font-family: "Poppins";
+    		padding: 50px 50px 60px 50px;
+    		margin-top: 80px;
+		}
+
+		.footer-distributed 
+		.footer-left, 
+		.footer-distributed 
+		.footer-center, 
+		.footer-distributed 
+		.footer-right 
+		{
+    		display: inline-block;
+    		vertical-align: top;
+		}
+
+		.footer-distributed 
+		.footer-left 
+		{
+    		width: 30%;
+		}
+
+		.footer-distributed h3 
+		{
+    		color: #ffffff;
+    		font-family: "Poppins";
+    		margin: 0;
+		}
+
+
+		.footer-distributed 
+		.footer-links 
+		{
+    		color: #ffffff;
+    		margin: 20px 0 12px;
+		}
+
+	.footer-distributed 
+	.footer-links a 
+	{
+    	display: inline-block;
+    	line-height: 1.8;
+    	text-decoration: none;
+    	color: inherit;
+	}
+
+	.footer-distributed 
+	.footer-batanes 
+	{
+    	color: #8f9296;
+    	font-size: 14px;
+    	font-weight: normal;
+    	margin: 0;
+	}
+
+	.footer-distributed 
+	.footer-center 
+	{
+    	width: 35%;
+	}
+
+	.footer-distributed 
+	.footer-center i 
+	{
+    	background-color: #33383b;
+    	color: #ffffff;
+    	font-size: 25px;
+    	width: 38px;
+    	height: 38px;
+    	border-radius: 50%;
+    	text-align: center;
+    	line-height: 42px;
+    	margin: 10px 15px;
+    	vertical-align: middle;
+	}
+
+	.footer-distributed 
+	.footer-center 
+	i.fa-envelope 
+	{
+    	font-size: 17px;
+    	line-height: 38px;
+	}
+
+	.footer-distributed .footer-center p {
+    	display: inline-block;
+    	color: #ffffff;
+    	vertical-align: middle;
+    	margin: 0;
+	}
+
+	.footer-distributed .footer-center p span 
+	{
+    	display: block;
+    	font-weight: normal;
+    	font-size: 14px;
+    	line-height: 2;
+	}
+
+	.footer-distributed 
+	.footer-center p a 
+	{
+    	color: #ffffff;
+    	text-decoration: none;
+	}
+
+
+	.footer-distributed 
+	.footer-right 
+	{
+    	width: 30%;
+
+	}
+
+	.footer-distributed 
+	.footer-batanes-about 
+	{
+    	line-height: 20px;
+    	color: #92999f;
+    	font-size: 13px;
+    	font-weight: normal;
+    	margin: 0;
+	}
+
+	.footer-distributed 
+	.footer-batanes-about span 
+	{
+    	display: block;
+    	color: #ffffff;
+    	font-size: 18px;
+    	font-weight: bold;
+    	margin-bottom: 20px;
+	}
+
+	.footer-distributed 
+	.footer-icons 
+	{
+    	margin-top: 25px;
+	}
+
+	.footer-distributed 
+	.footer-icons a 
+	{
+    	display: inline-block;
+    	width: 35px;
+    	height: 35px;
+    	cursor: pointer;
+    	background-color: #33383b;
+    	border-radius: 2px;
+    	font-size: 20px;
+    	color: #ffffff;
+    	text-align: center;
+    	line-height: 35px;
+    	margin-right: 3px;
+    	margin-bottom: 5px;
+	}
+
+	.footer-distributed 
+	.footer-icons a:hover 
+	{
+    	background-color: #3F71EA;
+	}
+
+	.footer-links a:hover 
+	{
+    	color: #3F71EA;
+	}
+	
+	.footer-left h3
+	{
+    	cursor: pointer;
+	}
+
+	.footer-left h3:hover
+	{
+    	color: #3F71EA;
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="head">
+		<header>
+			<div class="navigation">
+				<div class="logo">
+					<a href="index.html">BATANES</a>
+				</div>
+
+				<nav>
+					<a href="index.html" class="navlink active-link">home</a>
+					<a href="#tour" class="navlink">tours</a>
+					<a href="#products" class="navlink">products</a>
+					<a href="#accommodation" class="navlink">accommodation</a>
+					<a href="#contactus" class="navlink">contact us</a>
+				</nav>
+
+			</div>
+
+		</header>
+
+	</div>
+
+	<div class="picbatanes">
+		<img src="./name of the website, description of batanes/naidi-hills.jpg" width="100%" height="700">
+	</div>
+
+
+	<div class="batanes">
+		<p>
+			<!--batanes: smallest and
+				<br>
+				northernmost province
+				<br>
+				in the philippines-->
+			next stop batanes
+		</p>
+	</div>
+
+	<div class="title">
+		<br><br>
+		<h1> Overview </h1>
+		<br>
+	</div>
+
+	<div class="imgs">
+
+		<div class="column">
+			<img src="./name of the website, description of batanes/vayang.jpg" class="overview_pic1" style="width:100%" height="200px">
+		</div>
+
+		<div class="column">
+			<img src="./name of the website, description of batanes/batanes-basco-basco-lighthouse-shutterstock-1133462408.jpg" class="overview_pic2" style="width:100%" height="200px">
+		</div>
+
+		<div class="column">
+			<img src="./name of the website, description of batanes/marlboro-country.jpg" class="overview_pic3" style="width:100%" height="200px">
+		</div>
+
+	</div>
+
+	<div class="dscrptn">
+		<br>
+		<p>
+			Batanes is an archipelagic province in the Philippines, administratively part of the Cagayan Valley region.
+			It is the northernmost province in the country, and also the smallest, both in population and land area.
+			Batanes is one of the beautiful provinces found in the Philippines and it's capital is Basco.
+			It is also known as the “Home of the Winds”.
+		</p>
+	</div>
+
+	<div class="title">
+		<br><br>
+		<h1> Climate </h1>
+		<br>
+	</div>
+
+	<div class="imgs">
+
+		<div class="column">
+			<img src="./name of the website, description of batanes/valugan.jpg" class="climate_pic1" style="width:100%"
+				height="200px">
+		</div>
+
+		<div class="column">
+			<img src="./name of the website, description of batanes/download.jpg" class="climate_pic2"
+				style="width:100%" height="200px">
+		</div>
+
+		<div class="column">
+			<img src="./name of the website, description of batanes/itbayat.jpg" class="climate_pic1" style="width:100%"
+				height="200px">
+		</div>
+
+	</div>
+
+	<div class="dscrptn">
+		<br>
+		<p>
+			The climate of Batanes is cool and windy.
+			The area has a semi-temperate type of weather due to its location.
+		</p>
+	</div>
+
+	<div class="title">
+		<br><br>
+		<h1> culture </h1>
+		<br>
+	</div>
+
+	<div class="imgs">
+
+		<div class="column">
+			<img src="./name of the website, description of batanes/batanes-bike.jpg" class="culture_pic1"
+				style="width:100%" height="200px">
+		</div>
+
+		<div class="column">
+			<img src="./name of the website, description of batanes/tukon-chapel.jpg" class="culture_pic2"
+				style="width:100%" height="200px">
+		</div>
+
+		<div class="column">
+			<img src="./name of the website, description of batanes/batanes-itin.jpg" class="culture_pic3"
+				style="width:100%" height="200px">
+		</div>
+
+	</div>
+
+	<div class="dscrptn">
+		<br>
+		<p>
+			The Ivatans is partly influenced by the environmental condition of Batanes.
+			Unlike the old-type nipa huts common in the Philippines, Ivatans have adopted their now-famous stone houses
+			made of coral and limestone, designed to protect against the hostile climate.
+		</p>
+	</div>
+
+	<div class="title">
+		<br><br>
+		<h1> people </h1>
+		<br>
+	</div>
+
+	<div class="imgs">
+
+		<div class="column">
+			<img src="./name of the website, description of batanes/IMG_9446.jpeg" class="people_pic1"
+				style="width:100%" height="200px">
+		</div>
+
+		<div class="column">
+			<img src="./name of the website, description of batanes/IMG_9447.jpeg" class="people_pic2"
+				style="width:100%" height="200px">
+		</div>
+
+		<div class="column">
+			<img src="./name of the website, description of batanes/IMG_9448.jpeg" class="people_pic3"
+				style="width:100%" height="200px">
+		</div>
+
+	</div>
+
+	<div class="dscrptn">
+		<br>
+		<p>
+			Batanes is home to the Ivatans who are much admired as the “True Insulares”.
+			Ivatan share cultural and linguistic similarity with Taiwanese. Spanish ancestry also runs in their blood.
+			The Ivatan dialect is different from any other in the Philippines which is the Chirin nu Ibatan.
+		</p>
+	</div>
+
+	<br>
+	<hr style="width: 100%; margin: auto;">
+
+	<!-- TOURIST ATTRACTION -->
+	<div class="tourist">
+		<br>
+		<div class="section" id="tour">
+			<h1> Tourist Attractions </h1>
+		</div>
+		<br>
+
+		<div class="tour_container">
+
+			<a href="tour_a.html"><img
+					src="./TOURIST ATTRACTION/TOUR A/1. lighthouse/3 Day North Batan, Sabtang, and South Batan Island Batanes Tour.jpg" class="tour_a" style="width: 620px; height: 400px;" /></a>
+
+			<a href="tour_b.html"><img src="./TOURIST ATTRACTION/TOUR B/4. Morong Beach/lnhs7nsjy0vz.jpg" class="tour_b" style="width: 620px; height: 400px;" /></a>
+
+		</div>
+
+		<div class="atour_label">
+			<p class="text">tour a</p>
+		</div>
+
+		<div class="btour_label">
+			<p class="text">tour b</p>
+		</div>
+	</div>
+
+	<br>
+	<hr style="width: 100%; margin: auto;"><br>
+
+	<!-- PRODUCTS -->
+	<div class="title" id="products">
+		<h1> Products </h1><br>
+	</div>
+
+	<div class="dscrptn2">
+		<p>
+			What product is Batanes known for?
+		</p><br><br>
+	</div>
+
+	<div class="imgs">
+
+		<div class="column">
+			<img src="./PRODUCT/Rootcrops/a-list-of-philippine-root-crops.jpg" style="width:100%" height="200px">
+		</div>
+
+		<div class="column">
+			<img src="./PRODUCT/Rootcrops/download.jpg" style="width:100%" height="200px">
+		</div>
+
+		<div class="column">
+			<img src="./PRODUCT/Rootcrops/unnamed (1).jpg" style="width:100%" height="200px">
+		</div>
+
+	</div>
+
+	<div class="title">
+		<br>
+		<h2>root crops</h2>
+	</div>
+
+	<div class="dscrptn">
+		<br>
+		<p>
+			One of the major agricultural products of Batanes. Unlike rice, corn and other crops, root crops like
+			onions,
+			garlic, ginger, ube and gabi are less prone to destruction of typhoons that frequent the islands.
+		</p><br><br><br><br>
+	</div>
+
+	<div class="imgs2">
+
+		<div class="column">
+			<img src="./PRODUCT/Wooden bags/Batanes-souvenirs-4.jpg" style="width:100%" height="200px">
+		</div>
+
+		<div class="column">
+			<img src="./PRODUCT/Wooden bags/tumblr_a91960b526bbcdb810456cedd4bfc2b4_0a41cff2_1280.png" style="width:100%" height="200px">
+		</div>
+
+	</div>
+
+	<div class="title">
+		<br>
+		<h2>wooden bags</h2>
+	</div>
+
+	<div class="dscrptn">
+		<br>
+		<p>
+			These wooden crafts are sold at around Php 300 to Php 1,500 and are available in almost every souvenir shop.
+		</p>
+		<p>
+			Away from the global fashion scene where wooden beach bags are a trend, Ivatans have long been creating
+			their
+			own hand-crafted, wooden bags and wooden baskets locally known as yuvuk.
+		</p><br><br><br><br>
+	</div>
+
+	<div class="imgs1">
+
+		<div class="column">
+			<img src="./PRODUCT/Cookies of Batanes/unnamed.jpg" style="width:100%" height="200px">
+		</div>
+
+	</div>
+
+	<div class="title">
+		<br>
+		<h2>cookies of batanes</h2>
+	</div>
+
+	<div class="dscrptn">
+		<br>
+		<p>
+			These cookies range from Php 30 to Php 150.
+		</p>
+		<p>
+			Honesty Coffee Shop is not just a place for coffee and snacks but also for souvenirs.
+			Their popular take-home delicacies are cookies from Ivatan Bakers by AJ’s Breads & Pastries, with unique
+			flavors like ube, moringa, and carrot.
+		</p><br><br><br><br>
+	</div>
+
+	<div class="imgs2">
+
+		<div class="column">
+			<img src="./PRODUCT/Yaru Art Gallery _ Fip Café/download.jpg" style="width:100%" height="200px">
+		</div>
+
+		<div class="column">
+			<img src="./PRODUCT/Yaru Art Gallery _ Fip Café/Yaru-Art-Gallery-and-Fip-Cafe-Batanes-1.jpg"
+				style="width:100%" height="200px">
+		</div>
+
+	</div>
+
+	<div class="title">
+		<br>
+		<h2>yaru art gallery & fip café</h2>
+	</div>
+
+	<div class="dscrptn">
+		<br>
+		<p>
+			They sell oil and acrylic paintings from Php 2,000 to Php 28,000.
+		</p>
+		<p>
+			Showcases the works of Yaru, a group of Ivatan artists. In case you won’t get the chance to visit down
+			South, Basco’s Harbour Caf also sells some of their best works.
+		</p><br><br><br><br>
+	</div>
+
+	<div class="imgs2">
+
+		<div class="column">
+			<img src="./PRODUCT/Vunung/Batanes Day-44.jpg" style="width:100%" height="200px">
+		</div>
+
+		<div class="column">
+			<img src="./PRODUCT/Vunung/Vunung-wrap.jpg" style="width:100%" height="200px">
+		</div>
+
+	</div>
+
+	<div class="title">
+		<br>
+		<h2>vunung</h2>
+	</div>
+
+	<div class="dscrptn">
+		<br>
+		<p>
+			It's one thing that you must try when in Batanes. Vunung is the Ivatans' traditional way of serving food.
+			They wrap the meal on Kabaya leaves. Usually, these are served on special occasions like weddings where
+			people help hand in hand in the preparations without compensation. To me, this is the best way to try
+			and appreciate the Ivatan cuisine.
+		</p><br><br>
+	</div>
+
+	<hr style="width: 100%; margin: auto;">
+
+	<!-- ACCOMMODATION -->
+	<div class="title" id="accommodation">
+		<br><br>
+		<h1> book a hotel </h1><br>
+	</div>
+
+	<div class="dscrptn2">
+		<p>
+			You’ll get the best deals here!
+		</p><br><br>
+	</div>
+
+	<div class="hotel_container">
+
+		<a href="hotel1.html"><img src="./ACCOMMODATION/Fundacion Pacita/Fundacion Pacita.jpg" class="hotel1" style="width: 1000px; height: 700px;"></a>
+
+		<a href="hotel2.html"><img src="./ACCOMMODATION/Batanes Seaside Lodge and Restaurant/Screenshot 2021-10-24 113120.png" class="hotel2" style="width: 1000px; height: 700px;"></a>
+
+		<a href="hotel3.html"><img src="./ACCOMMODATION/Troy Lodge/551963_14061612110019863857.jpg" class="hotel3" style="width: 1000px; height: 700px;"></a>
+
+	</div>
+
+	<div class="hotelname1">
+		<p>Fundacion Pacita</p>
+	</div>
+
+	<div class="hotelname2">
+		<p>Batanes Seaside Lodge and Restaurant </p>
+	</div>
+
+	<div class="hotelname3">
+		<p>Troy Lodge</p>
+	</div>
+
+	<hr style="width: 100%; margin: auto;">
+
+	<!-- CONTACT US -->
+	<section id="contact">
+  
+		<h1 class="section-header" id="contactus">contact us</h1>
+		
+		<div class="contact-wrapper">
+
+			<div class="direct-contact-container">
+	  
+				<ul class="contact-list">
+				  <li class="list-item"><img src="./icons/location-outline.svg" style="width: 25px; height: 45px;"><span class="contact-text place" title="Visit us now">Batanes, Philippines</span></li>
+				  
+				  <li class="list-item"><img src="./icons/call-outline.svg" style="width: 25px; height: 45px;"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give us a call">+63 997 275 6753</a></span></li>
+				  
+				  <li class="list-item"><img src="./icons/mail-outline.svg" style="width: 25px; height: 45px;"><span class="contact-text gmail"><a href="mailto:welcometobatanes@gmail.com" title="Keep in touch with us">welcometobatanes@gmail.com</a></span></i></li>
+				  
+				</ul>
+				<ul class="social-media-list">
+				  <li><a href="#facebook" class="contact-icon"><img src="./icons/logo-facebook.svg"></a></li>
+  
+				  <li><a href="#instagram" target="_blank" class="contact-icon"><img src="./icons/logo-instagram.svg"></a></li>
+				  
+				  <li><a href="#twitter" target="_blank" class="contact-icon"><img src="./icons/logo-twitter.svg"></a></li>
+  
+				  <li><a href="#youtube" target="_blank" class="contact-icon"><img src="./icons/logo-youtube.svg"></a></li>       
+				</ul>
+		
+			  </div>	
+		
+		  <form id="contact-form" class="form-horizontal" role="form">
+			 
+			<div class="form-group" style="padding: 15px;">
+			  <div class="">
+				<input type="text" class="form-control" id="name" placeholder="Enter your Name" name="name" value="" pattern="[a-zA-Z]*" required>
+			  </div>
+			</div>
+	  
+			<div class="form-group" style="padding: 15px;">
+			  <div class="">
+				<input type="email" class="form-control" id="email" placeholder="Enter your Email" name="email" value="" required>
+			  </div>
+			</div>
+	  
+			<textarea class="form-control" style="padding: 15px;" rows="30" placeholder="Your Message" name="message" required></textarea>
+			
+			<button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+			  <div class="alt-send-button"><span class="send-text">SEND</span>
+			  </div>
+			
+			</button>
+
+			<button class="btn btn-primary send-button" id="submit" type="reset" value="SEND">
+				<div class="alt-send-button"><span class="send-text">RESET</span>
+				</div>
+			  
+			  </button>
+			
+		  </form>
+		  
+		  
+		</div>
+		
+	  </section>  
+		
+
+	<!-- FOOTER -->
+	<footer class="footer-distributed">
+
+        <div class="footer-left">
+            <a href="index.html" style="text-decoration: none;"><h3>BATANES</h3></a>
+
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                <br>
+                <a href="#tour">Tours</a>
+                <br>
+                <a href="#products">Products</a>
+                <br>
+                <a href="#accommodation">Accommodation</a>
+				<br>
+                <a href="#contactus">Contact Us</a>
+            </p>
+			<br>
+			<h3>Get Help</h3>
+			<br>
+			<h3>FAQ</h3>
+			<br>
+			<h3>Terms and Conditions</h3>
+            
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="address"></i>
+                <p>Batanes, Philippines</p>
+            </div>
+
+            <div>
+                <i class="phone"></i>
+                <p>+63 997 275 6753</p>
+            </div>
+            <div>
+                <i class="gmail"></i>
+                <p><a href="mailto:welcometobatanes@gmail.com">welcometobatanes@gmail.com</a></p><br>
+            
+				<p class="footer-batanes" style="padding-left: 29px; padding-top: 20px;">Copyright © BATANES 2023</p>
+				<br><br>
+				<p class="footer-batanes" style="padding-left: 29px; padding-top: 5px;">All rights reserved.</p>
+				</div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-batanes-about">
+                <span>About Us</span>
+                <strong>Batanes Island in the Philippines has a little bit of everything for different types of travelers: 
+					the mountains, the sea, the rolling hills, and the food. But above all, Batanes offers a unique type 
+					of refuge — peace and quiet, and the taste of a back-to-basics lifestyle.</strong>
+				<br><br><br>
+				<span>Follow Us</span>
+            </p>
+
+			
+            <div class="footer-icons">
+                <a href="#facebook"><img src="./icons/logo-facebook.svg"></a>
+                <a href="#instagram"><img src="./icons/logo-instagram.svg"></a>
+                <a href="#twitter"><img src="./icons/logo-twitter.svg"></a>
+                <a href="#youtube"><img src="./icons/logo-youtube.svg"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html
